@@ -108,8 +108,8 @@ local function createTab(name, posX)
 	return tabs[name]
 end
 
-local fixLag = createTab("🚀 Fix Lag", 10)
-local combat = createTab("⚔ Combat", 150)
+local fixLag = createTab("🎉 Fix Lag", 10)
+local combat = createTab("🔪 Combat", 150)
 
 -- ✅ Fix Lag Tab
 fixLag.addToggle("Xoá hiệu ứng", function(state)
@@ -141,7 +141,7 @@ fixLag.addToggle("Tắt ánh sáng phụ", function(state)
 end)
 
 -- ✅ Combat Tab
-combat.addToggle("Auto Attack", function(state)
+combat.addToggle("Attack👹", function(state)
 	if state then
 		task.spawn(function()
 			while state do
@@ -153,7 +153,7 @@ combat.addToggle("Auto Attack", function(state)
 	end
 end)
 
-combat.addToggle("Tăng tốc đánh x1000", function(state)
+combat.addToggle("Tăng tốc đánh👹", function(state)
 	local conn
 	if state then
 		conn = RunService.Heartbeat:Connect(function()
@@ -169,7 +169,7 @@ combat.addToggle("Tăng tốc đánh x1000", function(state)
 	end
 end)
 
-combat.addToggle("Hitbox", function(state)
+combat.addToggle("Hitbox👹", function(state)
 	for _, p in pairs(Players:GetPlayers()) do
 		if p ~= LocalPlayer and p.Character then
 			for _, part in ipairs({"Head", "Torso", "HumanoidRootPart"}) do
@@ -197,7 +197,7 @@ fpsLabel.Text = ""
 fpsLabel.Visible = false
 Instance.new("UICorner", fpsLabel)
 
-fixLag.addToggle("Hiển thị FPS", function(state)
+fixLag.addToggle("FPS", function(state)
 	local last = tick()
 	local frame = 0
 	local conn
