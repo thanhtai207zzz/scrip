@@ -9,13 +9,13 @@ local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local CoreGui = game:GetService("CoreGui")
 
 local gui = Instance.new("ScreenGui", CoreGui)
-gui.Name = "thanhtai"
+gui.Name = "thanhtai💦"
 gui.ResetOnSpawn = false
 
 local openBtn = Instance.new("TextButton", gui)
 openBtn.Size = UDim2.new(0, 40, 0, 40)
 openBtn.Position = UDim2.new(0, 10, 0.5, -20)
-openBtn.Text = ":))"
+openBtn.Text = "💦"
 openBtn.Font = Enum.Font.GothamBold
 openBtn.TextScaled = true
 openBtn.BackgroundColor3 = Color3.fromRGB(100, 70, 150)
